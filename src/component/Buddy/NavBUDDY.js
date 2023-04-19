@@ -1,9 +1,9 @@
-import React from "react";
-import "../App.css"
-function Nav() {
+import React from 'react'
+
+function NavBUDDY() {
   return (
-    
-      <nav className="nav">
+    <div>
+       <nav className="nav">
         <div className="nav-linkBack">
           <a href = '/' className="linkBack">
             <img src="./image/Vector.svg" alt="" className="linkBack-img" />
@@ -12,10 +12,10 @@ function Nav() {
         </div>
         <div className="nav__manage">
           <ul className="nav__manage">
-            <h5 className="nav-title">QUẢN LÝ TÀI KHOẢN TẠM</h5>
+            <h5 className="nav-title">CheckList Template</h5>
             <li className="nav-title">
               <a className="nav-title nav-title__link" href = '/'>
-                Giảng viên nội bộ
+              Quản lí NewBuddy
               </a>
             </li>
             <li className="nav-title">
@@ -26,8 +26,8 @@ function Nav() {
           </ul>
         </div>
       </nav>
- 
-  );
+    </div>
+  )
 }
 
-export default Nav;
+export default NavBUDDY

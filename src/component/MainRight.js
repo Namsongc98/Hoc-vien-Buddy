@@ -14,8 +14,9 @@ function MainRight() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization:
-            "eyJraWQiOiJmMHNBa1RoWStHcjdMSzNMWUNnN3IxXC9UMEZOSFZmelQ4SFprRTJMYXhhMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI4NzNkOWQyNy05ZmQ1LTRhOTctOGZkMS02ZjMwOTAwYmQ2ZmQiLCJldmVudF9pZCI6Ijg4MGZmZjk2LTg0NmQtNGQ4Ni04M2QwLThjZDhkYTFmMjcwNCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2ODE4MjM3MDIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9sblFSVFp4WkQiLCJleHAiOjE2ODE4MzgxMDUsImlhdCI6MTY4MTgyMzcwNSwianRpIjoiNWRjYTg0NTEtYjRkNS00ZThjLWEwMmEtZmUwOWJjMzY3NDY0IiwiY2xpZW50X2lkIjoiNG02Y2oyMWN0Zm5jdGFqMm84aGE0anY2dDciLCJ1c2VybmFtZSI6Im11bmd2diJ9.DrGIkL_ISTFUWIKLDuOfNgZNkODsdVWOZtbY8uczGMrvwq90ScunrRZzkzI7doJK4dtShXXra5tCg2YQq0eaSL8UECI_YiSO_17dM0iQMO_G_XGaQh7RPMJtSJqBCK2YQ761Rpkg1qC8dcii3xZiDX_eMrVGbZ1UcusSVdmpWsKJDSqNxGugxBOMdLeyCMzFS91mzPAjj5KYzzwMxx-KnnIoIMa8fW8Mhf_RtildKUTGY4ZKH5m95MYqWei1uyxQlxUWgh-H5hUHaF2A_IZ74di1LE1qsLjU_H8Aigj1WDDcTv6uQR8H-8u0cS4CwwZpnr1q96von6cBgIfSozEqZg",
+          // Authorization:
+          // "eyJraWQiOiJmMHNBa1RoWStHcjdMSzNMWUNnN3IxXC9UMEZOSFZmelQ4SFprRTJMYXhhMD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI4NzNkOWQyNy05ZmQ1LTRhOTctOGZkMS02ZjMwOTAwYmQ2ZmQiLCJldmVudF9pZCI6IjQwN2VmMDU5LWRhNmQtNGYyYi1hNjE2LTNkNTc0NDdhYTU1OCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2ODE5MTI2MDgsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMV9sblFSVFp4WkQiLCJleHAiOjE2ODE5MjcwMDgsImlhdCI6MTY4MTkxMjYwOCwianRpIjoiZTQ5ZmNlNjYtM2E5NS00ZDVjLWJiNmEtYzNmYjA1ZTY3YzY0IiwiY2xpZW50X2lkIjoiNG02Y2oyMWN0Zm5jdGFqMm84aGE0anY2dDciLCJ1c2VybmFtZSI6Im11bmd2diJ9.PtyCesQOHg1kc1ySbjaNV8dPAP104iA-Qu_pLKWzG2uCrz0UwcK5dfB6XXK0WtLiVt0q-jcouPUcNLo6VmmsWwYG2u2VVeZO3rRzeRoJLdwryMyneLOzHtu7VytqxQdgBrQ0QwaVCXLjzxqAUWMUZcM8IBWTZchd4SJOiqsjj9xyKtnTdHQtFPCx9JN46tVOxATieQLrIdKH-UK27JVcMcXidcIx2R_CnTnBYhQ8pKoPEn0NAnV9DuECuUarfXztqFTbRdP6Ip6vMb_jCKND6rguHB5hLHTXsjHG718NpUeY5uBBTiIMZjLaBchHhi_3yUEpePUXuiWZwmBsykvdZA",
+          "X-API-KEY": "74013f4c-df2b-46a9-8dd9-885d9e693a91",
         },
         body: JSON.stringify({
           code: null,
@@ -30,7 +31,7 @@ function MainRight() {
       .then((response) => response.json())
       .then((result) => setInfor(result.data));
   }, []);
-  // console.log(info);
+  console.log(info);
   // gui request nhận response
 
   return (
